@@ -5,7 +5,7 @@ const Graves = () => {
   const count = 50
 
   return (
-    <Instances limit={count}>
+    <Instances limit={count} castShadow>
       <boxGeometry args={[0.6, 0.8, 0.2]} />
       <meshStandardMaterial color="#b2b6b1" />
       {Array.from({ length: count }).map((_, i) => (
